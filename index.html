@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0040)  -->
-<html><script async="" src=" ./analytics.js"></script><script id="allow-copy_script">(function agent() {
+<html><script async="" src="./resources/analytics.js"></script><script id="allow-copy_script">(function agent() {
     let unlock = false
     document.addEventListener('allow_copy', (event) => {
       unlock = event.detail.unlock
@@ -45,7 +45,7 @@
 <link rel="apple-touch-icon" sizes="152x152" href="https://elarn.net/1/templates/assets/images/apple-touch-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="https://elarn.net/1/templates/assets/images/apple-touch-icon-180x180.png">
 <!--[if lte IE 8]><script src="https://elarn.net/1/templates/assets/js/ie/html5shiv.js"></script><![endif]-->
-<link rel="stylesheet" href=" ./main.min.css">
+<link rel="stylesheet" href="./resources/main.min.css">
 <!--[if lte IE 9]><link rel="stylesheet" href="https://elarn.net/1/templates/assets/css/ie9.min.css" /><![endif]-->
 <!--[if lte IE 8]><link rel="stylesheet" href="https://elarn.net/1/templates/assets/css/ie8.min.css" /><![endif]-->
 <script type="text/javascript">
@@ -112,13 +112,13 @@
 <h2>مرحبًا بك!</h2>
 <p>الآن يمكنك معرفة نتيجتك بسهولة <br> بشكل سهل وبسيط.</p>
 </header>
-<span class="image"><img src="./paper.png" alt=""></span>
+<span class="image"><img src="././resources/paper.png" alt=""></span>
 </div>
 <a href=" #natiga" class="goto-next scrolly">Next</a>
 </section>
 
 <section id="natiga" class="spotlight style1 right" style="">
-<span class="image fit main"><img src="./grad_wallpaper2.jpg" alt=""></span>
+<span class="image fit main"><img src="././resources/grad_wallpaper2.jpg" alt=""></span>
 <div class="content">
 <form action="index.php" id="result_form" method="GET" data-success-callback="natiga_callback">
 <header>
@@ -144,18 +144,23 @@
     var a = document.getElementById("code").value;
 
     if (a=="1"){
-      alert("keroo");
+      alert(" شكرا ليك يا "+name+"\n"+" نتيجتك هى : "+
+      59
+      +" من 60 "+"\n"
+      +"النسبة المئوية : "+"%98");
     }
-    else{
-      document.write("$نتيجتك يا <h1>keroo</h1>");
-
+    else if (a=="2"){
+      alert(" شكرا ليك يا "+name+"\n"+" نتيجتك هى : "+
+      56
+      +" من 60 "+"\n"
+      +"النسبة المئوية : "+"%93");
     }
   }
 </script>
 </tbody></table>
 <input type="hidden" name="action" value="search">
 
-<input type="submit" class="button special"  value="بحث" onclick="cond()" >
+<input  style='float: left;' width="10"  type="submit" class="button special"  value="بحث عن نتيجتك" onclick="cond()">
 </div>
 </form>
 </div>
@@ -178,11 +183,11 @@
 </footer>
 </div>
 
-<script src=" ./jquery.min.js"></script>
+<script src="./resources/jquery.min.js"></script>
 
 <!--[if lte IE 8]><script src="https://elarn.net/1/templates/assets/js/ie/respond.min.js"></script><![endif]-->
-<script src=" ./all.min.js"></script>
-<script src=" ./main.js"></script>
+<script src="./resources/all.min.js"></script>
+<script src="./resources/main.js"></script>
 
 
 </body>
